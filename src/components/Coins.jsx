@@ -75,7 +75,7 @@ const Coins = () => {
             <Input
               onChange={filterItem}
               placeholder={"Search Coin..."}
-              w={"md"}
+              w={["60", "md"]}
               border={"2px solid rgb(144,200,249)"}
               focusBorderColor={"false"}
             />
