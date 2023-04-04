@@ -16,7 +16,7 @@ const Exchanges = () => {
   const filterItem = (event) => {
     setSearchItem(event.target.value);
     const foundItems = exchangeStore.filter((exchange) =>
-      exchange.name.toLowerCase().includes(searchItem.toLocaleLowerCase())
+      exchange.name.toLowerCase().includes(searchItem.toLowerCase())
     );
     if (foundItems.length !== 0) setExchanges(foundItems);
     else setExchanges(exchangeStore);
